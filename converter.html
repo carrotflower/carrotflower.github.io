@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Converter</title>
+	<link rel="stylesheet" href="converter.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+
+</head>
+<body>
+	<nav class="menu">
+		<ul class="menu">
+		<li class="menu"><a href="" class="logo"><img src="img/money.png"></a></li>
+		<li class="menu"><a href="test.html">Главная</a></li>
+		<li class="menu"><a href="index.html">Депозитный калькулятор</a></li>
+		<li class="menu"><a href="loan.html">Кредитный калькулятор</a></li>
+		<li class="menu"><a href="converter.html">Конвертер валют</a></li>
+		<li class="menu"><a href="catalog.html">Карты</a></li>
+	</ul>
+		
+	</nav>
+	<h1>Конвертер валют</h1>
+	<div id="mainContainer">	
+		<div id="mainForm">
+			<div class="form">
+				<div class="inputs" id="left">
+					<label for="from">Валюта на руках</label>
+					<input id="from" class="bothInputs" type="number">
+					<select id="fromCurrency" class="bothSelects">
+						<option value="UAH">українська гривня</option>
+						<option value="USD">долар США</option>
+						<option value="EUR">євро</option>
+						<option value="RUB">російський рубль</option>
+						<option value="PLN">польська злота</option>
+					</select>
+
+				</div>
+				
+				<div class="inputs" id="image">
+					<a id="aimg" ><img id="swap" src="img/swap.png"></a>
+				</div>
+				
+				<div class="inputs" id="right">
+					<label for="from">Валюта получения</label>
+					<input id="to" class="bothInputs" type="number">
+					<select id="toCurrency" class="bothSelects">
+						<option value="UAH">українська гривня</option>
+						<option value="USD">долар США</option>
+						<option value="EUR">євро</option>
+						<option value="RUB">російський рубль</option>
+						<option value="PLN">польська злота</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+	<div class="bottom">
+	<h3>Розрахунок прибутковості депозиту</h3>
+	<p class="bottom">За допомогою депозитного калькулятору можна легко та швидко розрахувати прибутковість від вкладення коштів на депозит в банківську або іншу фінансову установу. Ви можете розрахувати прибутковість вкладу, враховуючи капіталізацію, щомісячне або щорічне поповнення. Для того, щоб зробити розрахунок вкажіть такі дані: сума депозиту, відсоткова ставка, термін, розмір щомісячного поповнення, враховувати чи ні капіталізацію. В результаті буде отриманий розрахунок підсумкового прибутку та суми до видачі. Нижче можна продивитися докладний розрахунок за кожен місяць та отримати графічне представлення прибутковості вкладу.</p>
+	</div>
+
+	</div>
+
+	<script src="converter.js" type="text/javascript"></script>
+</body>
+</html>
