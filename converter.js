@@ -24,7 +24,7 @@ function convert(amount, curFrom, curTo) {
 			return res.json();
 		}).then((res) => {
 			let convertedCurRate = res.rates[curTo];
-			document.getElementById('to').value = (convertedCurRate / amount).toFixed(3);
+			document.getElementById('to').value = (convertedCurRate*amount).toFixed(3);
 		});
 	}
 }
