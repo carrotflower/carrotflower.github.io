@@ -29,28 +29,28 @@ function convert(amount, curFrom, curTo) {
 	}
 }
 
-document.getElementById('from').onchange = (e) => {
+document.getElementById('from').onkeyup = (e) => {
 	convert(e.target.value,
 		document.getElementById('fromCurrency').value,
 		document.getElementById('toCurrency').value,
 	);
 }
 
-document.getElementById('fromCurrency').onchange = (e) => {
+document.getElementById('fromCurrency').onkeyup = (e) => {
 	convert(document.getElementById('from').value,
 		document.getElementById('fromCurrency').value,
 		document.getElementById('toCurrency').value,
 	);
 }
 
-document.getElementById('to').onchange = (e) => {
+document.getElementById('to').onkeyup = (e) => {
 	convert(document.getElementById('from').value,
 		document.getElementById('fromCurrency').value,
 		document.getElementById('toCurrency').value,
 	);
 }
 
-document.getElementById('toCurrency').onchange = (e) => {
+document.getElementById('toCurrency').onkeyup = (e) => {
 	convert(document.getElementById('from').value,
 		document.getElementById('fromCurrency').value,
 		document.getElementById('toCurrency').value,
