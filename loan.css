@@ -39,7 +39,7 @@ ul li a{
 
 nav ul li a img{
 
-	padding-right: 300px;
+	padding-right: 380px;
 	padding-left: 50px;
 	height: 100px;
 	line-height: 100px;
@@ -47,6 +47,11 @@ nav ul li a img{
 
 a.logo{
 	height: 100px;
+}
+
+ul.menu li.menu a:hover{
+	color: white;
+	transition: 0.2s;
 }
 
 div.container{

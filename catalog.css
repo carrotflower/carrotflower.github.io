@@ -30,8 +30,6 @@ body{
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
 	border-radius: 10px;
-
-
 }
 
 .container .box .image .card-img {
@@ -50,20 +48,21 @@ body{
 .container .box .content{
 	position: absolute;
 	display: none;
+
 }
 
 .container .box:hover .content{
 	position: absolute;
 	transition: 1s;
 	display: block;
+	
 }
 .container .box:hover{
 	transition: 0.5s;
-	background-color:#d6dbdf;
+	background-color:#73979c;
 	transform: scale(1.1);
 	border-left: 1px solid black;
 	border-right: 1px solid black;
-
 }
 
 .firstRow {
@@ -87,6 +86,7 @@ ul.menu li.menu{
 	display: inline-block;
 	float: left;
 	line-height: 100px;
+
 }
 
 ul li a{
@@ -98,7 +98,7 @@ ul li a{
 }
 
 nav ul li a img{
-	padding-right: 300px;
+	padding-right: 380px;
 	padding-left: 50px;
 	height: 100px;
 	line-height: 100px;
@@ -107,6 +107,11 @@ nav ul li a img{
 a.logo{
 	height: 100px;
 }
+ul.menu li.menu a:hover{
+	color: white;
+	transition: 0.2s;
+}
+
 
 h1{
 	margin-top: 100px;
@@ -140,5 +145,18 @@ h3 {
     padding-top: 40px;
     padding-left: 40px;
     text-align: left;
-   
+}
+
+h2{
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.box li{
+	margin-left: 20px;
+	margin-top: 10px;
+	line-height: 20px;
+	text-align: left;
+	color: white;
 }

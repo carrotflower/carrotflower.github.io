@@ -8,7 +8,7 @@ function convert(amount, curFrom, curTo) {
 					let convertedCur = res.find(cur => {
 						return cur.cc == curTo
 					});
-					document.getElementById('to').value = (amount / convertedCur.rate).toFixed(3);
+					document.getElementById('to').value = (amount/convertedCur.rate).toFixed(3);
 				} else {
 					document.getElementById('to').value = amount;
 				}
@@ -24,7 +24,7 @@ function convert(amount, curFrom, curTo) {
 			return res.json();
 		}).then((res) => {
 			let convertedCurRate = res.rates[curTo];
-			document.getElementById('to').value = (amount/convertedCurRate).toFixed(3);
+			document.getElementById('to').value = (convertedCurRate / amount).toFixed(3);
 		});
 	}
 }
@@ -60,8 +60,8 @@ document.getElementById('toCurrency').onchange = (e) => {
 document.getElementById('image').onclick = (e) => {
 	let from = document.getElementById('from').value;
 	let to = document.getElementById('to').value;
-	document.getElementById('from').value = to;
-	document.getElementById('to').value = from;
+	// document.getElementById('from').value = to;
+	// document.getElementById('to').value = from;
 	from = document.getElementById('fromCurrency').value;
 	to = document.getElementById('toCurrency').value;
 	document.getElementById('fromCurrency').value = to;
