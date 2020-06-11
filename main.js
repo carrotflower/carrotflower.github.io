@@ -372,7 +372,7 @@ function currencyValue(){
 	}
 }
 
-//Функція, яка дозворяє рахувати відсотки, враховуючи капіталізацію
+//Функція, яка дозволяє рахувати відсотки, враховуючи капіталізацію
  function capitalisation(){
  	currencyValue();
  	let p = document.getElementById("sum").value;
