@@ -67,7 +67,7 @@ div.container{
 div.loanCalculator{
 	margin-top: 50px;
 	width: 70%;
-	height: 600px;
+	height: 450px;
 	background-color: #e5e7e9  ;
 	border: #9b9f99 7px solid; 
 	box-shadow: 0px 0px 8px -3px rgba(0,0,0,1);
@@ -85,10 +85,15 @@ label{
 
 
 input, select{
-	border: 1px solid  #000000 ;
+	border: 1px solid #9b9f99;
   	border-radius: 4px;
   	font-size: 20px;
   	padding: 5px;
+
+}
+
+input:focus{
+	border-color: #3f6262;
 }
 
 .data{
@@ -96,8 +101,15 @@ input, select{
 
 }
 
-.button{
+#button{
 	margin-left: 60px;
+	background-color: #9b9f99;
+	transition: 0.2s;
+	cursor: pointer;
+	border-color: black;
+}
+#button:hover{
+	color: white;
 }
 
 .result{
@@ -108,10 +120,12 @@ input, select{
 	
 }
 .result th{
-	padding: 20px 50px;
+	padding: 10px 50px;
+	background-color: #abb2b9;
 }
 .result td{
 	padding: 10px 10px;
+	text-align: center;
 }
 
 #monthYear{
@@ -198,4 +212,14 @@ h3 {
 
 div.wrapper{
 	text-align: center;
+}
+
+#seal{
+	margin-top: 30px;
+	padding: 10px;
+	width: 200px;
+	background-color: #9b9f99;
+	border-color: black;
+	cursor: pointer;
+	margin-left: 50px;
 }
