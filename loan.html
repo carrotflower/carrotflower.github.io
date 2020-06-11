@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Loan</title>
 	<link rel="stylesheet" href="loan.css">
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>	
@@ -37,23 +37,12 @@
 				<li class="row"><label for="interest">Відсоткова ставка</label>
 					<input class="data" id ="interest" type="number">
 				</li>
-				<li class="row"><label for="interest">Дата видачі</label>
-					<input class="data" id ="takeDay" type="date">
-				</li>
 				<li class="row"><label for="annDiff">Вид платежу</label>
 					<select class="data" id="annDiff">
 						<option value="ann">Ануїтетний</option>
 						<option value="diff">Диференційований</option>
 					</select>
 				</li>
-				<li class="row"><label for="periodicity">Періодичність погашення</label>
-					<select class="data" id="periodicity">
-						<option value="everyMonth">Щомісячно</option>
-						<option value="everyQuarter">Щоквартально</option>
-						<option value="everyYear">Щорічно</option>
-					</select>
-				</li>
-
 
 			</ul>
 		<input  type="button" value="Розрахувати" id="button">
@@ -78,7 +67,8 @@
 	<div class="chartContainer">
 	<canvas id="myChart"></canvas>
 	</div>
-
+	
+	<input type="button" id="seal" value="Закрити розрахунок">
 	</div>
 
 	<div class="wrapper">
