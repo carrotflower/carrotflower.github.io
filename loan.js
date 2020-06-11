@@ -102,7 +102,7 @@ function different(){
 				label:'GRAPH',
 				data:[
 					document.getElementById('sum').value,
-					a
+					a.toFixed(2)
 				]
 			}]
 		},
@@ -117,11 +117,6 @@ function different(){
 	
 }
 
-function setCurrentDate(){
-
-	field.value = paymentDate;
-}
-setCurrentDate(); 
 
 
 function annuitet(){
@@ -136,6 +131,11 @@ function annuitet(){
 	let str = '<table><tr><th>Місяць</th><th>Заборгованість</th><th>Відсоток</th><th>Основний борг</th><th>Сума платежу</th></tr>';
 	let psum = 0;
 	let isum = 0;
+
+	if (my.value == 'year') {
+		term = term * 12;
+		console.log(term + " yt");
+	}
 
 	// let top = ((rate/100)/12) *Math.pow((1 + ((rate/100)/12)), term);
 	// let bottom = Math.pow((1 + ((rate/100)/12)), term) - 1;
@@ -185,7 +185,7 @@ function annuitet(){
 				label:'GRAPH',
 				data:[
 					document.getElementById('sum').value,
-					psum
+					psum.toFixed(2)
 				]
 			}]
 		},
@@ -213,4 +213,9 @@ button.onclick = function(){
 	}
 
 
+}
+
+let seal = document.querySelector('#seal');
+seal.onclick = function(){
+	document.getElementById("loanResult").className="invisible";
 }
