@@ -110,9 +110,9 @@ function first(){
 	eSum.innerHTML = p.value+" "+ued;
 	entRate.innerHTML = i.value+"%";
 	if(r.value == 'mnth'){
-	depTerm.innerHTML = d.value+" мес.";
+	depTerm.innerHTML = d.value+" міс.";
 	}else{
-	depTerm.innerHTML = nd+" мес.";	
+	depTerm.innerHTML = nd+" міс.";	
 	}
 	console.log(g);
 
@@ -237,9 +237,9 @@ function second (){
 	eSum.innerHTML = parseInt(z, 10) + (parseInt(nres, 10) - rs.value)+" "+ued;
 	entRate.innerHTML = i.value+"%";
 	if(r.value == 'mnth'){
-	depTerm.innerHTML = d.value+" мес.";
+	depTerm.innerHTML = d.value+" міс.";
 	}else{
-	depTerm.innerHTML = nd+" мес.";	
+	depTerm.innerHTML = nd+" міс.";	
 	}
 	console.log(g);
 	console.log(res.toFixed(2));
@@ -416,9 +416,9 @@ function currencyValue(){
 		allRefills.innerHTML = 0;
 		entRate.innerHTML = i.value+"%";
 		if(r.value == 'mnth'){
-		depTerm.innerHTML = d.value+" мес.";
+		depTerm.innerHTML = d.value+" міс.";
 		}else{
-		depTerm.innerHTML = nd+" мес.";	
+		depTerm.innerHTML = nd+" міс.";	
 		}
 
 		let myChart = document.getElementById('myChart').getContext('2d');
@@ -448,71 +448,5 @@ function currencyValue(){
  	}
 
 
-
-
-// function chart() {
-// 	let myChart = document.getElementById('myChart').getContext('2d');
-	
-
-// 	let beforeAfter = new Chart(myChart, {
-// 		type:'bar',
-// 		data:{
-// 			labels:['BEFORE', 'AFTER'],
-// 			datasets:[{
-// 				label:'STATISTIC',
-// 				data:[
-// 					z,
-// 					fr
-// 				]
-// 			}]
-// 		},
-// 		options:{}
-// 	});
-// }
-
-
-	
-// 	var p = document.getElementById("sum").value;
-// 	var g = 0;
-// 	var y = 0;
-// 	var res = 0;
-// 	var psp = 0;
-
-
-// 	// for (let j = 0; j < parseInt(d.value, 10) || j < parseInt(nd, 10); j++){
-// 	// 	var n = (field.valueAsDate.getMonth()+1)+j;
-// 	// 	// console.log(n + 'asad');
-// 	// 	while (!((n - 12) <= 0)) {
-//  //    	n -= 12;
-//  //    	// console.log(n + 'asad');
-// 	// 	}
-// 	// 	daysInMonth(n);
-
-// 	// 	y++;
-// 	// 	if (y = 1) {
-// 	// 	sp = (p*i.value*md)/(365*100);
-// 	// 	res = parseInt(p, 10) + parseInt(sp, 10);
-// 	// 	console.log(parseInt(res, 10));
-// 	// 	console.log(parseInt(p, 10) + " cp");
-// 	// 	console.log(sp + " cp");
-// 	// 	// console.log(parseInt(res, 10));
-
-// 	// }else{
-
-// 	// 	sp =  (res*i.value*md)/(365*100);
-// 	// 	res = parseInt(p, 10) + parseInt(sp, 10);
-		
-// 	// 	// p = res;
-		
-// 	// 	// console.log(parseInt(p, 10) + " cp");
-// 	// 	console.log(sp + " cp");
-// 	// 	console.log(md + " cp");
-// 	// 	console.log(parseInt(res, 10));
-// 	// }
-
-// 	sp = p*Math.pow((1+(i*md/365*100), nd));
-// 		console.log(sp)
-
-// 	}
 
 
