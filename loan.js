@@ -161,6 +161,11 @@ function annuitet(){
 
 	psum+=parseFloat(p);
 	isum+=parseFloat(I);
+		
+	if (loanSum<0) {
+		loanSum = 0;
+	}
+
 
 	str += `<tr><td>${i}</td><td>${loanSum}</td><td>${I}</td><td>${body}</td><td>${p}</td></tr>`;
 	
